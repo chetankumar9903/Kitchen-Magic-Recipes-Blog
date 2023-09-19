@@ -1,6 +1,6 @@
 # Kitchen Magic Recipes- Blog
 
-![Website Logo](/logo.png)
+![Website Logo](https://github.com/chetankumar9903/Kitchen-Magic-Recipes-Blog/assets/126199153/63b3628c-c32f-4be5-8c00-30b7e62b3470)
 
 [Website URL](https://fine-pear-jellyfish-gear.cyclic.cloud)
 
