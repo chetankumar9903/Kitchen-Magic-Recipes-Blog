@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    /* Custom CSS */
+.contact-form {
+    background: linear-gradient(#141e30, #243b55); /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:white; /* Dark text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* .btn-success {
+    background-color: #28a745; 
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #218838; 
+} */
+
+/* Adjust the form width and center it on smaller screens */
+@media (max-width: 767px) {
+    .contact-form {
+        margin-top: 20px;
+    }
+}
+
+.btn-success {
+            /* background-color: #28a745; */
+            background:linear-gradient(#141e30, #243b55);;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            padding: 10px 20px;
+            color: #03e9f4;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .btn-success a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+        /* .btn-success:hover {
+            background-color: #218838;
+        } */
+
+        .btn-success a {
+            position: relative;
+            display: block;
+            color: #03e9f4;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .btn-success a span {
+            position: absolute;
+            display: block;
+        }
+
+        .btn-success a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            animation: btn-anim1 1s linear infinite;
+        }
+
+        .btn-success a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: .25s;
+        }
+
+        .btn-success a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: .5s;
+        }
+
+        .btn-success a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: .75s;
+        }
+
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%, 100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%, 100% {
+                top: 100%;
+            }
+        }
+
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%, 100% {
+                right: 100%;
+            }
+        }
+
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%, 100% {
+                bottom: 100%;
+            }
+        }
+
+
+   </style>
+</head>
+
+<main>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Details</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Matunga, Mumbai, Maharastra</p>
+                <p><i class="fas fa-phone"></i> Phone: +123 456 789</p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kumarchetan10458@gmail.com">kumarchetan10458@gmail.com</a></p>
+                <h2>Follow Us</h2>
+                <a href="#" class="btn btn-primary mr-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="btn btn-info mr-2"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="btn btn-danger"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="col-md-6">
+               
+                <div class="contact-form">
+                    <h2>Any Suggestions/Query</h2>
+                    <form action="/contact" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-success btn-lg btn-block">Send Message</button> -->
+                        <button type="submit" class="btn-success">
+                            <a>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                 Send Message
+                            </a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+<!-- Embed Video Section -->
+<section class="container my-5">
+    <h2>Featured Video</h2>
+    <!-- Replace 'your-video-url' with the actual video URL -->
+    <div class="embed-responsive embed-responsive-16by9">
+        <video id="hover-video" class="embed-responsive-item" autoplay muted loop>
+            <source src="/img/contact.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+</main>
+<style>
+    /* Style to hide the video controls */
+    #hover-video::-webkit-media-controls {
+        display: none !important;
+    }
+</style>
+
+<script>
+    const video = document.getElementById('hover-video');
+    
+    // Play the video when the mouse enters the video container
+    video.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    // Pause the video when the mouse leaves the video container
+    video.addEventListener('mouseleave', () => {
+        video.pause();
+    });
+</script>
+
+
+
+<!-- <button id="fullscreen-button" class="btn btn-primary">Toggle Fullscreen</button>
+<script>
+    const video = document.getElementById('fullscreen-video');
+    const fullscreenButton = document.getElementById('fullscreen-button');
+
+    fullscreenButton.addEventListener('click', () => {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { /* Firefox */
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE/Edge */
+            video.msRequestFullscreen();
+        }
+    });
+</script> -->
