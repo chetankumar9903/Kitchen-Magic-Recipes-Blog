@@ -2,7 +2,7 @@
 
 ![Website Logo](/logo.png)
 
-[Website URL]()
+[Website URL](https://fine-pear-jellyfish-gear.cyclic.cloud)
 
 ## About [Kitchen Magic Recipes- Blog]
 
