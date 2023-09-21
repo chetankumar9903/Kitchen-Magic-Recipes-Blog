@@ -34,7 +34,7 @@ Welcome to [Kitchen Magic Recipes- Blog], your culinary destination for explorin
 1. Clone this repository to your local machine.
 
    ```bash
-   git clone https://github.com/yourusername/your-recipe-blog.git
+   git clone https://github.com/chetankumar9903/Kitchen-Magic-Recipes-Blog.git
 
 2. Change into the project directory:
     ```bash
