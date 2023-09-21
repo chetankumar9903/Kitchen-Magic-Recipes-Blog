@@ -55,4 +55,4 @@ We welcome contributions from the community! If you have a new feature idea, bug
 ### Contact Us
 If you have any questions, suggestions, or feedback, please reach out to us at Kumarchetan10458@gmail.com.
 
-Happy cooking and enjoy exploring the world of flavors with [Your Recipe Blog Website Name]!
+Happy cooking and enjoy exploring the world of flavors with Kitchen Magic Recipes!
